@@ -6,9 +6,11 @@
   "keywords": [
     "htmlbars",
     "view",
-    "render",
     "template",
-    "hapi"
+    "hapi",
+    "ember",
+    "fastboot",
+    "ember server side rendering"
   ],
   "scripts": {
     "test": "make test",
@@ -18,6 +20,14 @@
   },
   "author": "Erik Trom",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eriktrom/hapi-htmlbars-views"
+  },
+  "bugs": {
+    "url": "https://github.com/eriktrom/hapi-htmlbars-views/issues"
+  },
+  "homepage": "https://github.com/eriktrom/hapi-htmlbars-views",
   "dependencies": {
     "hoek": "2.x.x",
     "htmlbars": "^0.14.3",
