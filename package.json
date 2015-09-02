@@ -2,10 +2,32 @@
   "name": "hapi-htmlbars-views",
   "version": "0.1.0",
   "description": "A hapi view engine for htmlbars",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "main": "lib/index.js",
+  "keywords": [
+    "htmlbars",
+    "view",
+    "render",
+    "template",
+    "hapi"
+  ],
+  "engines": {
+    "node": ">=0.10.32"
   },
-  "author": "",
-  "license": "MIT"
+  "scripts": {
+    "test": "node_modules/lab/bin/lab -a code -t 100 -L",
+    "test-cov-html": "node_modules/lab/bin/lab -a code -r html -o coverage.html"
+  },
+  "author": "Erik Trom",
+  "license": "MIT",
+  "dependencies": {
+    "hoek": "2.x.x",
+    "htmlbars": "^0.14.3",
+    "loader.js": "^3.3.0",
+    "simple-dom": "^0.2.7"
+  },
+  "devDependencies": {
+    "code": "1.x.x",
+    "hapi": "9.x.x",
+    "lab": "5.x.x"
+  }
 }
