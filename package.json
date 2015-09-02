@@ -10,12 +10,11 @@
     "template",
     "hapi"
   ],
-  "engines": {
-    "node": ">=0.10.32"
-  },
   "scripts": {
-    "test": "node_modules/lab/bin/lab -a code -t 100 -L",
-    "test-cov-html": "node_modules/lab/bin/lab -a code -r html -o coverage.html"
+    "test": "make test",
+    "test-cov-html": "make test-cov-html",
+    "auto-start": "make auto-start",
+    "auto-test": "make auto-test"
   },
   "author": "Erik Trom",
   "license": "MIT",
@@ -28,6 +27,7 @@
   "devDependencies": {
     "code": "1.x.x",
     "hapi": "9.x.x",
-    "lab": "5.x.x"
+    "lab": "5.x.x",
+    "json-stringify-safe": "^5.0.1"
   }
 }

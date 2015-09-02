@@ -1,9 +1,22 @@
 var Code = require('code');
 var Lab = require('lab');
 var Hapi = require('hapi');
+var Stringify = require('json-stringify-safe');
 var Subject = require('../');
 
+
 var internals = {};
+
+
+internals.debug = function debug () {
+
+    var args = Array.prototype.slice.call(arguments);
+    var msg = args.shift();
+
+    console.log(msg, Stringify(args[0], null , 4));
+    console.log('--------------\n\n\n\n--------');
+};
+
 
 var lab = exports.lab = Lab.script();
 var describe = lab.experiment;
@@ -29,6 +42,9 @@ describe('Basic non view engine test', function () {
         var data = { title: 'w00t, it renders' };
 
         var actual = Subject.compile(input)(data);
+
+        internals.debug('output is', actual);
+
         expect(actual).to.equal('<p>Server says w00t, it renders</p>');
 
         done();
