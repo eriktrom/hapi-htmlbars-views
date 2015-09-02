@@ -31,7 +31,6 @@
   "dependencies": {
     "hoek": "2.x.x",
     "htmlbars": "^0.14.3",
-    "loader.js": "^3.3.0",
     "simple-dom": "^0.2.7"
   },
   "devDependencies": {
