@@ -107,7 +107,7 @@ describe('e2e', function () {
             console.log('res.result is %o', res.result);
 
             var $ = Cheerio.load(res.result);
-            var expectedHTML = $('h1').html(); // TODO: fix failure here: Object.keys called on non-object
+            var expectedHTML = $('body').html(); // TODO: fix failure here: Object.keys called on non-object
             var expectedMessage = $('h1').text();
 
             expect(expectedHTML).to.contain('<h1>Server says oh hai message!</h1>');
