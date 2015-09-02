@@ -82,7 +82,8 @@ describe('e2e', function () {
             server.route({
                 method: 'GET',
                 path: '/',
-                handler: function(request, reply) {
+                handler: function (request, reply) {
+
                     reply.view('basic-example', {
                         title: 'w00t, it renders',
                         message: 'oh hai message!'
@@ -103,7 +104,7 @@ describe('e2e', function () {
             expect(res.statusCode, 'Status code').to.equal(200);
             expect(res.headers['content-type'], 'content-type').to.equal('text/html');
 
-            console.log("res.result is %o", res.result);
+            console.log('res.result is %o', res.result);
 
             var $ = Cheerio.load(res.result);
             var expectedHTML = $('h1').html(); // TODO: fix failure here: Object.keys called on non-object
