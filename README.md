@@ -79,6 +79,19 @@ This plugin is not yet released on npm and will likely become centered around se
 
 But of course! Get in touch. Drop an issue here on github or ping me on ember slack directly.
 
+To get started:
+
+    $ npm install
+    $ npm test
+
+To output test coverage to an html file:
+
+    $ npm run test-cov-html
+
+To give the demo a whirl:
+
+    $ cd examples && node basic.js
+
 ## License
 
 MIT

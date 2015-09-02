@@ -15,7 +15,6 @@
   "scripts": {
     "test": "make test",
     "test-cov-html": "make test-cov-html",
-    "auto-start": "make auto-start",
     "auto-test": "make auto-test"
   },
   "author": "Erik Trom",
